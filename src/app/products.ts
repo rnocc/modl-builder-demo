@@ -1,4 +1,6 @@
-export const products = [
+import { Product } from './types';
+
+export const products: Product[] = [
   {
     'qsBaseID': '9',
     'BaseLabel': 'ADV2',
@@ -28,7 +30,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': '_',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -45,7 +46,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -59,14 +59,13 @@ export const products = [
             'OptionCode': 'WL',
             'Description': 'Wireless'
           }
-        ]
+        ],
       },
       {
         'LevelGroup': null,
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': '_',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -83,7 +82,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'ZC',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -104,7 +102,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -136,7 +133,7 @@ export const products = [
     'ItemType': 'Hospital Bed',
     'ForSale': '1',
     'SalesType': null,
-    'ItemSubType1': 'Maternitiy',
+    'ItemSubType1': 'Maternity',
     'ItemSubType2': null,
     'QtyPerBox': '1',
     'StockCheckUser': null,
@@ -180,7 +177,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -249,7 +245,6 @@ export const products = [
         'LevelDefault': 'RP',
         'options': [
           {
-            'notes': 'select between permanent, Removable or no iv poles',
             'OptionCode': 'PP',
             'Description': 'Permanent'
           },
@@ -268,7 +263,6 @@ export const products = [
         'Tag': 'misc',
         'Description': 'Misc.',
         'LevelDefault': '5W',
-        'notes': 'Choose between miscellaneous additional items',
         'options': [
           {
             'OptionCode': '5W',
@@ -311,7 +305,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -332,7 +325,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'EA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -354,7 +346,6 @@ export const products = [
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'V',
         'ShowIfExpr': 'rails=\'SR\'',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -373,7 +364,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': 'SR',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -417,7 +407,6 @@ export const products = [
         'Tag': 'side_comm',
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'V',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -452,7 +441,6 @@ export const products = [
         'Tag': 'oxygen',
         'Description': 'Oxygen Bottle Holder',
         'LevelDefault': 'SO',
-        'notes': 'Type of oxygen holder',
         'options': [
           {
             'OptionCode': 'DO',
@@ -473,7 +461,6 @@ export const products = [
         'Tag': 'fifth_wheel',
         'Description': 'Retractable 5th Wheel Steering',
         'LevelDefault': '5W',
-        'notes': '5th Wheel Steering or no addition',
         'options': [
           {
             'OptionCode': '5W',
@@ -490,7 +477,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': '_',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -534,7 +520,6 @@ export const products = [
         'Tag': 'type',
         'Description': 'Type',
         'LevelDefault': 'M',
-        'notes': 'Select between types of GoBeds',
         'options': [
           {
             'OptionCode': 'E',
@@ -551,7 +536,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderail Additional Features',
         'LevelDefault': '_',
-        'notes': 'Customize finished touches to siderails',
         'options': [
           {
             'OptionCode': 'A',
@@ -580,7 +564,6 @@ export const products = [
         'Tag': 'oxygen',
         'Description': 'Oxygen Bottle Holder',
         'LevelDefault': '_',
-        'notes': 'Type of oxygen holder',
         'options': [
           {
             'OptionCode': 'O',
@@ -597,7 +580,6 @@ export const products = [
         'Tag': 'p_assistance',
         'Description': 'Patient Assistance',
         'LevelDefault': '_',
-        'notes': 'Choice of having patient Apparatus',
         'options': [
           {
             'OptionCode': 'PA',
@@ -614,7 +596,6 @@ export const products = [
         'Tag': 'monitor',
         'Description': 'Monitor Tray',
         'LevelDefault': '_',
-        'notes': 'Monitor Tray or no addition',
         'options': [
           {
             'OptionCode': 'M',
@@ -631,7 +612,6 @@ export const products = [
         'Tag': 'fifth_wheel',
         'Description': 'Retractable 5th Wheel Steering',
         'LevelDefault': '_',
-        'notes': '5th Wheel Steering or no addition',
         'options': [
           {
             'OptionCode': '5W',
@@ -648,7 +628,6 @@ export const products = [
         'Tag': 'legs',
         'Description': 'Stabilizer Legs',
         'LevelDefault': '_',
-        'notes': 'option of having Stabilization legs',
         'options': [
           {
             'OptionCode': 'SL',
@@ -665,7 +644,6 @@ export const products = [
         'Tag': 'head_foot',
         'Description': 'Permanent Head or Footboards',
         'LevelDefault': 'HF',
-        'notes': 'Select headboard, footboard, both or none',
         'options': [
           {
             'OptionCode': 'FB',
@@ -690,7 +668,6 @@ export const products = [
         'Tag': 'f_control',
         'Description': 'Footboard Controls',
         'LevelDefault': 'C',
-        'notes': 'Select footboard or no footboard control',
         'options': [
           {
             'OptionCode': 'C',
@@ -707,7 +684,6 @@ export const products = [
         'Tag': 'flat',
         'Description': 'Flatbed Button',
         'LevelDefault': 'F',
-        'notes': 'option to have flatbed button',
         'options': [
           {
             'OptionCode': 'F',
@@ -724,7 +700,6 @@ export const products = [
         'Tag': 'misc',
         'Description': 'Misc. Additional Features',
         'LevelDefault': 'CR',
-        'notes': 'Choose between miscellaneous features',
         'options': [
           {
             'OptionCode': 'CR',
@@ -799,7 +774,6 @@ export const products = [
         'Tag': 'scale',
         'Description': 'In-bed Scale System',
         'LevelDefault': 'S',
-        'notes': 'Customize type of scale system',
         'options': [
           {
             'OptionCode': 'B',
@@ -820,7 +794,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -841,7 +814,6 @@ export const products = [
         'Tag': 'side_comm',
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'V',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -861,7 +833,6 @@ export const products = [
         'Description': 'Smart TV (with closed captioning, channel up/down, and mute)',
         'LevelDefault': 'TV',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'choice between smart tv or no smart tv',
         'options': [
           {
             'OptionCode': 'TV',
@@ -898,7 +869,6 @@ export const products = [
         'Tag': 'surfaces',
         'Description': 'Additional Surfaces',
         'LevelDefault': 'EXT',
-        'notes': 'Option of having additional support',
         'options': [
           {
             'OptionCode': 'EXT',
@@ -967,7 +937,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderail Additional Features',
         'LevelDefault': '_',
-        'notes': 'Customize finished touches to siderails',
         'options': [
           {
             'OptionCode': 'A',
@@ -998,7 +967,6 @@ export const products = [
         'LevelDefault': 'RP',
         'options': [
           {
-            'notes': 'select between permanent, Removable or no iv poles',
             'OptionCode': 'PP',
             'Description': 'Permanent'
           },
@@ -1042,7 +1010,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': 'SR',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -1059,7 +1026,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -1077,7 +1043,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -1099,7 +1064,6 @@ export const products = [
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'V',
         'ShowIfExpr': 'rails=\'SR\'',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -1118,7 +1082,6 @@ export const products = [
         'Tag': 'surfaces',
         'Description': 'Additional Surfaces',
         'LevelDefault': 'D',
-        'notes': 'Option of having additional safety features',
         'options': [
           {
             'OptionCode': 'C',
@@ -1143,7 +1106,6 @@ export const products = [
         'Tag': 'wood',
         'Description': 'Wood Laminates',
         'LevelDefault': 'O',
-        'notes': 'Customize different types of wood available',
         'options': [
           {
             'OptionCode': 'M',
@@ -1173,7 +1135,6 @@ export const products = [
         'Description': 'Color Accents',
         'LevelDefault': 'B',
         'ShowIfExpr': 'wood#\'_\'',
-        'notes': 'Select Color of Accent on wood',
         'options': [
           {
             'OptionCode': 'B',
@@ -1199,7 +1160,6 @@ export const products = [
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'V',
         'ShowIfExpr': 'siderails=\'SR\'',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -1244,7 +1204,6 @@ export const products = [
         'Tag': 'type',
         'Description': 'Type',
         'LevelDefault': 'S',
-        'notes': 'Select between types of GoBeds',
         'options': [
           {
             'OptionCode': 'EX',
@@ -1264,7 +1223,6 @@ export const products = [
         'LevelGroup': null,
         'Tag': 'chaperone',
         'Description': 'Chaperone Bed',
-        'notes': 'Type of Chaperone Bed',
         'LevelDefault': 'X',
         'options': [
           {
@@ -1289,7 +1247,6 @@ export const products = [
         'Tag': 'scale',
         'Description': 'In-bed Scale System',
         'LevelDefault': 'S',
-        'notes': 'Customize type of scale system',
         'options': [
           {
             'OptionCode': 'B',
@@ -1312,7 +1269,6 @@ export const products = [
         'Tag': 'cpr',
         'Description': 'CPR Release',
         'LevelDefault': 'CR',
-        'notes': 'CPR or no CPR Release',
         'options': [
           {
             'OptionCode': 'CR',
@@ -1331,7 +1287,6 @@ export const products = [
         'Description': 'Extra Surfaces',
         'LevelDefault': '_',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'Choice of additional surfaces',
         'options': [
           {
             'OptionCode': 'EXT',
@@ -1357,7 +1312,6 @@ export const products = [
         'Description': 'Smart TV (with closed captioning, channel up/down, and mute)',
         'LevelDefault': 'TV',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'choice between smart tv or no smart tv',
         'options': [
           {
             'OptionCode': 'TV',
@@ -1375,7 +1329,6 @@ export const products = [
         'Description': 'IV Poles',
         'LevelDefault': 'RP',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'select between permanent, Removable or no iv poles',
         'options': [
           {
             'OptionCode': 'PP',
@@ -1396,7 +1349,6 @@ export const products = [
         'Tag': 'misc',
         'Description': 'Misc.',
         'LevelDefault': 'C',
-        'notes': 'Choose between miscellaneous additional items',
         'ShowIfExpr': 'type=\'S\'',
         'options': [
           {
@@ -1429,7 +1381,7 @@ export const products = [
     'ItemType': 'Hospital Bed',
     'ForSale': '1',
     'SalesType': null,
-    'ItemSubType1': 'Maternitiy',
+    'ItemSubType1': 'Maternity',
     'ItemSubType2': null,
     'QtyPerBox': '1',
     'StockCheckUser': null,
@@ -1505,7 +1457,6 @@ export const products = [
         'Description': 'Smart TV (with closed captioning, channel up/down, and mute)',
         'LevelDefault': 'TV',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'choice between smart tv or no smart tv',
         'options': [
           {
             'OptionCode': 'TV',
@@ -1636,7 +1587,6 @@ export const products = [
         'Description': 'Brightness',
         'LevelDefault': '10',
         'ShowIfExpr': 'tutility=\'T\'',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -1706,7 +1656,6 @@ export const products = [
         'Tag': 'display',
         'Description': 'Display Device',
         'LevelDefault': 'P',
-        'notes': 'Choose from displays',
         'options': [
           {
             'OptionCode': 'F',
@@ -1727,7 +1676,6 @@ export const products = [
         'Tag': 'Screen',
         'Description': 'Screen',
         'LevelDefault': 'F',
-        'notes': 'If display is chosen, select form a dropdown or fixed screen',
         'options': [
           {
             'OptionCode': 'D',
@@ -1744,7 +1692,6 @@ export const products = [
         'Tag': 'brightness',
         'Description': 'Brightness',
         'LevelDefault': '10',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -1765,7 +1712,6 @@ export const products = [
         'Tag': 'projmount',
         'Description': 'Mount',
         'LevelDefault': 'C',
-        'notes': 'Where projector should be mounted',
         'options': [
           {
             'OptionCode': 'C',
@@ -1786,7 +1732,6 @@ export const products = [
         'Tag': 'customlens',
         'Description': 'Custom Lens',
         'LevelDefault': 'N',
-        'notes': 'Option of having a custom lens',
         'options': [
           {
             'OptionCode': 'N',
@@ -1803,7 +1748,6 @@ export const products = [
         'Tag': 'lenstype',
         'Description': 'Custom Lens Type',
         'LevelDefault': 'S',
-        'notes': 'Choose, if selected, type of custom lens',
         'options': [
           {
             'OptionCode': 'L',
@@ -1820,7 +1764,6 @@ export const products = [
         'Tag': 'flatmount',
         'Description': 'Mount',
         'LevelDefault': 'C',
-        'notes': 'Where projector should be mounted',
         'options': [
           {
             'OptionCode': 'C',
@@ -1837,7 +1780,6 @@ export const products = [
         'Tag': 'size',
         'Description': 'Size',
         'LevelDefault': '100',
-        'notes': 'Size of display',
         'options': [
           {
             'OptionCode': '42',
@@ -1866,7 +1808,6 @@ export const products = [
         'Tag': 'videoconf',
         'Description': 'Video Conferencing',
         'LevelDefault': 'Y',
-        'notes': 'Ability to have Video Conferencing',
         'options': [
           {
             'OptionCode': 'N',
@@ -1883,7 +1824,6 @@ export const products = [
         'Tag': 'teleconf',
         'Description': 'Teleconferencing',
         'LevelDefault': 'N',
-        'notes': 'Option to have Teleconferencing',
         'options': [
           {
             'OptionCode': 'N',
@@ -1900,7 +1840,6 @@ export const products = [
         'Tag': 'mic',
         'Description': 'Wireless Microphone',
         'LevelDefault': 'LA',
-        'notes': 'Type of Microphone',
         'options': [
           {
             'OptionCode': 'HA',
@@ -2006,7 +1945,6 @@ export const products = [
         'Description': 'Brightness',
         'LevelDefault': '10',
         'ShowIfExpr': 'tutility=\'T\'',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -2077,7 +2015,6 @@ export const products = [
         'Description': 'Wireless Microphone',
         'LevelDefault': 'LA',
         'ShowIfExpr': '',
-        'notes': 'Type of Microphone',
         'options': [
           {
             'OptionCode': 'HA',
@@ -2124,7 +2061,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': 'SR',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -2141,7 +2077,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -2162,7 +2097,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -2184,7 +2118,6 @@ export const products = [
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'C',
         'ShowIfExpr': 'rails=\'SR\'',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -2202,7 +2135,6 @@ export const products = [
         'LevelGroup': null,
         'Tag': 'surfaces',
         'Description': 'Additional Surfaces',
-        'notes': 'Option of having additional support',
         'LevelDefault': 'D',
         'options': [
           {
@@ -2228,7 +2160,6 @@ export const products = [
         'Tag': 'wood',
         'Description': 'Wood Laminates',
         'LevelDefault': '_',
-        'notes': 'Customize different types of wood available',
         'options': [
           {
             'OptionCode': 'M',
@@ -2257,7 +2188,6 @@ export const products = [
         'Tag': 'accent',
         'Description': 'Color Accents',
         'LevelDefault': 'B',
-        'notes': 'Select Color of Accent on wood',
         'options': [
           {
             'OptionCode': 'B',
@@ -2282,7 +2212,6 @@ export const products = [
         'Tag': 'p_assistance',
         'Description': 'Patient Assistance',
         'LevelDefault': '_',
-        'notes': 'Choice of having patient Apparatus',
         'options': [
           {
             'OptionCode': 'PA',
@@ -2372,7 +2301,6 @@ export const products = [
         'Description': 'Brightness',
         'LevelDefault': '6',
         'ShowIfExpr': 'tutility=\'T\'',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -2419,7 +2347,6 @@ export const products = [
         'Tag': 'display',
         'Description': 'Display Device',
         'LevelDefault': 'P',
-        'notes': 'Choose from displays',
         'options': [
           {
             'OptionCode': 'F',
@@ -2441,7 +2368,6 @@ export const products = [
         'Description': 'Screen',
         'LevelDefault': 'D',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'If display is chosen, select form a dropdown or fixed screen',
         'options': [
           {
             'OptionCode': 'D',
@@ -2459,7 +2385,6 @@ export const products = [
         'Description': 'Brightness',
         'LevelDefault': '6',
         'ShowIfExpr': 'display=\'P\' or display=\'F\'',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -2481,7 +2406,6 @@ export const products = [
         'Description': 'Mount',
         'LevelDefault': 'W',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'Where projector should be mounted',
         'options': [
           {
             'OptionCode': 'C',
@@ -2503,7 +2427,6 @@ export const products = [
         'Description': 'Custom Lens',
         'LevelDefault': 'Y',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'Option of having a custom lens',
         'options': [
           {
             'OptionCode': 'N',
@@ -2521,7 +2444,6 @@ export const products = [
         'Description': 'Custom Lens Type',
         'LevelDefault': 'S',
         'ShowIfExpr': 'display=\'P\' and customlens=\'Y\'',
-        'notes': 'Choose, if selected, type of custom lens',
         'options': [
           {
             'OptionCode': 'L',
@@ -2539,7 +2461,6 @@ export const products = [
         'Description': 'Mount',
         'LevelDefault': 'C',
         'ShowIfExpr': 'display=\'F\'',
-        'notes': 'Where projector should be mounted',
         'options': [
           {
             'OptionCode': 'C',
@@ -2557,7 +2478,6 @@ export const products = [
         'Description': 'Size',
         'LevelDefault': '100',
         'ShowIfExpr': 'display=\'F\'',
-        'notes': 'Size of display',
         'options': [
           {
             'OptionCode': '42',
@@ -2587,7 +2507,6 @@ export const products = [
         'Description': 'Video Conferencing',
         'LevelDefault': 'Y',
         'ShowIfExpr': '',
-        'notes': 'Ability to have Video Conferencing',
         'options': [
           {
             'OptionCode': 'N',
@@ -2606,7 +2525,6 @@ export const products = [
         'Description': 'Teleconferencing',
         'LevelDefault': 'N',
         'ShowIfExpr': '',
-        'notes': 'Option to have Teleconferencing',
         'options': [
           {
             'OptionCode': 'N',
@@ -2625,7 +2543,6 @@ export const products = [
         'Description': 'Wireless Microphone',
         'LevelDefault': 'LA',
         'ShowIfExpr': '',
-        'notes': 'Type of Microphone',
         'options': [
           {
             'OptionCode': 'HA',
@@ -2688,7 +2605,6 @@ export const products = [
         'Tag': 'oxygen',
         'Description': 'Oxygen Bottle Holder',
         'LevelDefault': 'SO',
-        'notes': 'Type of oxygen holder',
         'options': [
           {
             'OptionCode': 'DO',
@@ -2709,7 +2625,6 @@ export const products = [
         'Tag': 'fifth_wheel',
         'Description': 'Retractable 5th Wheel Steering',
         'LevelDefault': '5W',
-        'notes': '5th Wheel Steering or no addition',
         'options': [
           {
             'OptionCode': '5W',
@@ -2727,7 +2642,6 @@ export const products = [
         'Tag': 'legs',
         'Description': 'Stabilizer Legs',
         'LevelDefault': '_',
-        'notes': 'option of having Stabilization legs',
         'options': [
           {
             'OptionCode': 'SL',
@@ -2744,7 +2658,6 @@ export const products = [
         'LevelGroup': null,
         'Tag': 'head_foot',
         'Description': 'Permanent Head or Footboards',
-        'notes': 'Select headboard, footboard, both or none',
         'LevelDefault': 'HF',
         'options': [
           {
@@ -2770,7 +2683,6 @@ export const products = [
         'Tag': 'monitor',
         'Description': 'Monitor Tray',
         'LevelDefault': '_',
-        'notes': 'Monitor Tray or no addition',
         'options': [
           {
             'OptionCode': 'M',
@@ -2789,7 +2701,6 @@ export const products = [
         'LevelDefault': 'RP',
         'options': [
           {
-            'notes': 'select between permanent, Removable or no iv poles',
             'OptionCode': 'PP',
             'Description': 'Permanent'
           },
@@ -2808,7 +2719,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': 'SR',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'A',
@@ -2863,7 +2773,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -2904,7 +2813,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -2926,7 +2834,6 @@ export const products = [
         'Description': 'IV Poles',
         'LevelDefault': 'RP',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'select between permanent, Removable or no iv poles',
         'options': [
           {
             'OptionCode': 'PP',
@@ -2947,7 +2854,6 @@ export const products = [
         'Tag': 'scale',
         'Description': 'In-bed Scale System',
         'LevelDefault': 'S',
-        'notes': 'Customize type of scale system',
         'options': [
           {
             'OptionCode': 'B',
@@ -3045,7 +2951,6 @@ export const products = [
         'Tag': 'display',
         'Description': 'Display Device',
         'LevelDefault': 'N',
-        'notes': 'Choose from displays',
         'options': [
           {
             'OptionCode': 'F',
@@ -3067,7 +2972,6 @@ export const products = [
         'Description': 'Screen',
         'LevelDefault': 'D',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'If display is chosen, select form a dropdown or fixed screen',
         'options': [
           {
             'OptionCode': 'D',
@@ -3085,7 +2989,6 @@ export const products = [
         'Description': 'Brightness',
         'LevelDefault': '6',
         'ShowIfExpr': 'display=\'P\' or display=\'F\'',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -3107,7 +3010,6 @@ export const products = [
         'Description': 'Mount',
         'LevelDefault': 'W',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'Where projector should be mounted',
         'options': [
           {
             'OptionCode': 'C',
@@ -3129,7 +3031,6 @@ export const products = [
         'Description': 'Custom Lens',
         'LevelDefault': 'Y',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'Option of having a custom lens',
         'options': [
           {
             'OptionCode': 'N',
@@ -3147,7 +3048,6 @@ export const products = [
         'Description': 'Custom Lens Type',
         'LevelDefault': 'S',
         'ShowIfExpr': 'display=\'P\' and customlens=\'Y\'',
-        'notes': 'Choose, if selected, type of custom lens',
         'options': [
           {
             'OptionCode': 'L',
@@ -3165,7 +3065,6 @@ export const products = [
         'Description': 'Mount',
         'LevelDefault': 'C',
         'ShowIfExpr': 'display=\'F\'',
-        'notes': 'Where projector should be mounted',
         'options': [
           {
             'OptionCode': 'C',
@@ -3183,7 +3082,6 @@ export const products = [
         'Description': 'Size',
         'LevelDefault': '100',
         'ShowIfExpr': 'display=\'F\'',
-        'notes': 'Size of display',
         'options': [
           {
             'OptionCode': '42',
@@ -3213,7 +3111,6 @@ export const products = [
         'Description': 'Video Conferencing',
         'LevelDefault': 'Y',
         'ShowIfExpr': '',
-        'notes': 'Ability to have Video Conferencing',
         'options': [
           {
             'OptionCode': 'N',
@@ -3232,7 +3129,6 @@ export const products = [
         'Description': 'Teleconferencing',
         'LevelDefault': 'N',
         'ShowIfExpr': '',
-        'notes': 'Option to have Teleconferencing',
         'options': [
           {
             'OptionCode': 'N',
@@ -3251,7 +3147,6 @@ export const products = [
         'Description': 'Wireless Microphone',
         'LevelDefault': 'LA',
         'ShowIfExpr': '',
-        'notes': 'Type of Microphone',
         'options': [
           {
             'OptionCode': 'HA',
@@ -3298,7 +3193,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -3320,7 +3214,6 @@ export const products = [
         'Description': 'Smart TV (with closed captioning, channel up/down, and mute)',
         'LevelDefault': 'TV',
         'ShowIfExpr': 'type=\'S\'',
-        'notes': 'choice between smart tv or no smart tv',
         'options': [
           {
             'OptionCode': 'TV',
@@ -3338,7 +3231,6 @@ export const products = [
         'Description': 'Brightness',
         'LevelDefault': '10',
         'ShowIfExpr': 'display=\'P\'',
-        'notes': 'Options of level of brightness',
         'options': [
           {
             'OptionCode': '4',
@@ -3359,7 +3251,6 @@ export const products = [
         'Tag': 'display',
         'Description': 'Display Device',
         'LevelDefault': 'P',
-        'notes': 'Choose from displays',
         'options': [
           {
             'OptionCode': 'F',
@@ -3406,7 +3297,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -3427,7 +3317,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': 'SR',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',
@@ -3470,7 +3359,6 @@ export const products = [
         'Tag': 'monitor',
         'Description': 'Monitor Tray',
         'LevelDefault': '_',
-        'notes': 'Monitor Tray or no addition',
         'options': [
           {
             'OptionCode': 'M',
@@ -3507,7 +3395,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -3555,7 +3442,6 @@ export const products = [
         'Tag': 'chaperone',
         'Description': 'Bed Monitoring System',
         'LevelDefault': 'X',
-        'notes': 'Control of monitoring options',
         'options': [
           {
             'OptionCode': 'X',
@@ -3576,7 +3462,6 @@ export const products = [
         'Tag': 'smart_bed',
         'Description': 'Smart Bed',
         'LevelDefault': 'BA',
-        'notes': 'Choose between having awareness or wireless type smartbed',
         'options': [
           {
             'OptionCode': 'BA',
@@ -3597,7 +3482,6 @@ export const products = [
         'Tag': 'side_comm',
         'Description': 'Siderail Communication Packages',
         'LevelDefault': 'V',
-        'notes': 'If siderails are available, customize different packages',
         'options': [
           {
             'OptionCode': 'C',
@@ -3616,7 +3500,6 @@ export const products = [
         'Tag': 'rails',
         'Description': 'Siderails',
         'LevelDefault': '_',
-        'notes': 'Siderails or No Siderails',
         'options': [
           {
             'OptionCode': 'SR',

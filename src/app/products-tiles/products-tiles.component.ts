@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Product } from '../types';
 
 @Component({
   selector: 'app-products-tiles',
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./products-tiles.component.css']
 })
 export class ProductsTilesComponent implements OnInit {
-  @Input() products: any;
+  @Input() products: Product[];
 
   constructor() { }
 

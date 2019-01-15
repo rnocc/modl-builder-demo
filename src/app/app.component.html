@@ -13,41 +13,14 @@
       <input matInput placeholder="Search products">
     </mat-form-field>
     <mat-divider></mat-divider>
-    <mat-list>
-      <h3 mat-subheader>Manufacturer</h3>
-      <mat-list-item>
-        <button mat-button class="list-button">
-          All
-        </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button class="list-button">
-          Mountain Disk
-        </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button class="list-button">
-          Flintstone
-        </button>
-      </mat-list-item>
+    <ng-container *ngFor="let value of commonValues">
+      <mat-list>
+        <h3 mat-subheader>{{ value.display + ':' }}</h3>
+        <mat-list-item (click)="filter(value.key,'')" [ngClass]="{'list-item-active': propertyFilters[value.key] ==''}">All</mat-list-item>
+        <mat-list-item *ngFor="let val of value.values" (click)="filter(value.key,val)" [ngClass]="{'list-item-active': propertyFilters[value.key] ==val}">{{ val || 'None' }}</mat-list-item>
+      </mat-list>
       <mat-divider></mat-divider>
-      <h3 mat-subheader>Item type</h3>
-      <mat-list-item>
-        <button mat-button class="list-button">
-          All
-        </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button class="list-button">
-          Hospital bed
-        </button>
-      </mat-list-item>
-      <mat-list-item>
-        <button mat-button class="list-button">
-          A/V
-        </button>
-      </mat-list-item>
-    </mat-list>
+    </ng-container>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar class="product-list-toolbar">
@@ -64,8 +37,8 @@
       </div>
     </mat-toolbar>
     <section class="browse">
-      <app-products-tiles [products]="products" *ngIf="viewTiles"></app-products-tiles>
-      <app-products-table [products]="products" *ngIf="!viewTiles"></app-products-table>
+      <app-products-tiles [products]="displayList()" *ngIf="viewTiles"></app-products-tiles>
+      <app-products-table [products]="displayList()" *ngIf="!viewTiles"></app-products-table>
     </section>
   </mat-sidenav-content>
 </mat-sidenav-container>
