@@ -16,8 +16,27 @@
     <ng-container *ngFor="let value of commonValues">
       <mat-list>
         <h3 mat-subheader>{{ value.display + ':' }}</h3>
-        <mat-list-item (click)="filter(value.key,'')" [ngClass]="{'list-item-active': propertyFilters[value.key] ==''}">All</mat-list-item>
-        <mat-list-item *ngFor="let val of value.values" (click)="filter(value.key,val)" [ngClass]="{'list-item-active': propertyFilters[value.key] ==val}">{{ val || 'None' }}</mat-list-item>
+
+        <mat-chip-list *ngIf="!!propertyFilters[value.key]">
+          <ng-container *ngFor="let val of value.values">
+            <mat-chip *ngIf="propertyFilters[value.key] === val" (removed)="filter(value.key, '')">
+              {{val}}
+              <mat-icon matChipRemove>cancel</mat-icon>
+            </mat-chip>
+          </ng-container>
+        </mat-chip-list>
+
+        <ng-container *ngIf="propertyFilters[value.key]===''">
+          <mat-list-item *ngFor="let val of value.values" (click)="filter(value.key,val)">
+            <button mat-button *ngIf="propertyFilters[value.key] !== val" class="list-button">
+              {{ val || 'None' }}
+            </button>
+            <button mat-button color="primary" *ngIf="propertyFilters[value.key] === val" class="selected list-button">
+              {{ val || 'None' }}
+            </button>
+          </mat-list-item>
+        </ng-container>
+
       </mat-list>
       <mat-divider></mat-divider>
     </ng-container>

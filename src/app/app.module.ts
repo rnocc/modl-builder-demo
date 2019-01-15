@@ -10,7 +10,8 @@ import {
   MatListModule,
   MatGridListModule,
   MatCardModule,
-  MatTableModule
+  MatTableModule,
+  MatChipsModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -36,7 +37,8 @@ import { ProductsTableComponent } from './products-table/products-table.componen
     MatInputModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

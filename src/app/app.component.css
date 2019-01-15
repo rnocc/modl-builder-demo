@@ -58,3 +58,7 @@ mat-sidenav {
 .browse {
   padding: 16px;
 }
+
+mat-chip.mat-chip {
+  margin: 0 16px 16px;
+}
