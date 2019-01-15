@@ -65,6 +65,7 @@
     </mat-toolbar>
     <section class="browse">
       <app-products-tiles [products]="products" *ngIf="viewTiles"></app-products-tiles>
+      <app-products-table [products]="products" *ngIf="!viewTiles"></app-products-table>
     </section>
   </mat-sidenav-content>
 </mat-sidenav-container>

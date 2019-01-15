@@ -1,0 +1,27 @@
+<div class="mat-elevation-z2">
+  <mat-table #table [dataSource]="products">
+
+    <ng-container matColumnDef="product">
+      <mat-header-cell *matHeaderCellDef> Product </mat-header-cell>
+      <mat-cell *matCellDef="let product"> {{ product.Series }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="baseDesc">
+      <mat-header-cell *matHeaderCellDef> Base Description </mat-header-cell>
+      <mat-cell *matCellDef="let product"> {{ product.BaseDesc }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="itemType">
+      <mat-header-cell *matHeaderCellDef> Item Type </mat-header-cell>
+      <mat-cell *matCellDef="let product"> {{ product.ItemType }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="subtype">
+      <mat-header-cell *matHeaderCellDef> Subtype </mat-header-cell>
+      <mat-cell *matCellDef="let product"> {{ product.ItemSubType1 }} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
