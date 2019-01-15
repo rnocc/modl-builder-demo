@@ -1,0 +1,19 @@
+:host {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 350px);
+}
+
+.mat-card-image {
+  height: 250px;
+}
+
+.card-content {
+  display: flex;
+}
+
+.label {
+  text-align: right;
+  line-height: 2;
+  margin-right: 6px;
+}

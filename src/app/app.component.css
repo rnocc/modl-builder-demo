@@ -1,0 +1,68 @@
+:host {
+  height: 100vh;
+  display: grid;
+  grid-template: "toolbar"
+                 "page-container" 1fr;
+}
+
+.nav-logo {
+  max-height: 55px;
+}
+
+.main-toolbar {
+  grid-area: toolbar;
+  display: grid;
+  grid-template:  "logo menu" auto
+  / 1fr 50px;
+}
+
+img {
+  grid-area: logo;
+}
+
+.menu-button {
+  grid-area: menu;
+}
+
+.page-container {
+  grid-area: page-container
+}
+
+mat-sidenav {
+  padding: 40px 0;
+}
+
+.search {
+  padding: 0 16px;
+}
+
+.list-button {
+  width: 100%;
+  text-align: left;
+}
+
+.product-list-toolbar {
+  display: grid;
+  grid-template:  "products-title vm-buttons" auto
+  / 1fr auto;
+}
+
+.products-title {
+  grid-area: products-title;
+}
+
+.view-mode-buttons {
+  grid-area: vm-buttons;
+}
+
+.browse {
+  padding: 16px;
+}
+
+mat-chip.mat-chip {
+  margin: 0 16px 16px;
+}
+
+::ng-deep .mat-chip-list-wrapper {
+  margin: 0 !important;
+}
