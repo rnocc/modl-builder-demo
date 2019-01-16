@@ -10,7 +10,7 @@ import { ProductsService } from './products.service';
 export class AppComponent {
   searchTerm?: string;
   title = 'modl-builder-demo';
-  viewTiles = true;
+  viewTiles = false;
   products: Product[];
   propertyFilters: PropertyFilters;
   commonValues: CommonValue[];

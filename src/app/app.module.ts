@@ -9,20 +9,17 @@ import {
   MatInputModule,
   MatListModule,
   MatGridListModule,
-  MatCardModule,
   MatTableModule,
   MatChipsModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductsTilesComponent } from './products-tiles/products-tiles.component';
 import { ProductsTableComponent } from './products-table/products-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsTilesComponent,
     ProductsTableComponent
   ],
   imports: [
@@ -37,7 +34,6 @@ import { ProductsTableComponent } from './products-table/products-table.componen
     MatInputModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule,
     MatChipsModule
   ],
   providers: [],

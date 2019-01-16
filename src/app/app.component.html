@@ -56,7 +56,6 @@
       </div>
     </mat-toolbar>
     <section class="browse">
-      <app-products-tiles [products]="displayList()" *ngIf="viewTiles"></app-products-tiles>
       <app-products-table [products]="displayList()" *ngIf="!viewTiles"></app-products-table>
     </section>
   </mat-sidenav-content>
