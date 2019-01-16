@@ -15,7 +15,7 @@
     <mat-divider></mat-divider>
     <ng-container *ngFor="let value of commonValues">
       <mat-list>
-        <h3 mat-subheader>{{ value.display + ':' }}</h3>
+        <h3 mat-subheader>{{ value.display }}</h3>
 
         <mat-chip-list *ngIf="!!propertyFilters[value.key]">
           <ng-container *ngFor="let val of value.values">
